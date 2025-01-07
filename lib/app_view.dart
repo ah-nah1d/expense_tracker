@@ -1,3 +1,4 @@
+import 'package:expense_tracker/screens/Home/views/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyAppView extends StatelessWidget {
@@ -12,12 +13,12 @@ class MyAppView extends StatelessWidget {
         colorScheme: ColorScheme.light(
           surface: Colors.grey.shade100,
           onSurface: Colors.black,
-          primary: Color(0xFF00B2E7),
-          secondary: Color(0xFFE064F7),
-          tertiary: Color(0xFFFF8D6C),
+          primary: const Color(0xFF00B2E7),
+          secondary: const Color(0xFFE064F7),
+          tertiary: const Color(0xFFFF8D6C),
         )
       ),
-      
+      home: HomeScreen(),
     );
   }
 }
